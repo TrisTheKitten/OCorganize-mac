@@ -1,0 +1,3 @@
+# Tauri + Rust rewrite with LooseRootScan
+
+OCorganize was rewritten from Python/CustomTkinter to a Rust workspace with `backend/core` for filesystem logic and a Tauri 2 + Svelte 5 desktop shell. We chose a big-bang migration (no PyO3 hybrid) to ship a native cross-platform binary. LooseRootScan collects only loose, Finder-visible files directly in the organization root and moves them into category folders at that same root; parallel stat/grouping is used in v1. File moves are sequential on constrained hardware and parallel (with per-target-directory locking) on capable machines; undo logs are streamed in batches to stay memory-safe on large jobs.

@@ -1,0 +1,53 @@
+# Rust
+/target/
+
+# Node / frontend
+**/node_modules/
+frontend/dist/
+
+# Tauri generated
+backend/app/gen/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Cursor
+.cursor/
+
+# Agent / local AI context
+AGENTS.md
+
+# Python (legacy dev artifacts)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Test / coverage artifacts
+coverage/
+htmlcov/
+*.profraw
+lcov.info
+.turbo/
+
+

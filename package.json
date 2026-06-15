@@ -1,0 +1,10 @@
+{
+  "name": "ocorganize",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "bash build/scripts/dev.sh",
+    "build": "bash build/scripts/build.sh",
+    "test": "bash build/scripts/test.sh"
+  }
+}
